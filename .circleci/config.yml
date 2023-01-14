@@ -17,8 +17,8 @@ jobs:
           name: "Install dependencies"
           command: npm i
       - save_cache:
-          keys: "npm-packages"
-          path: 
+          key: "npm-packages"
+          paths: 
             - /src/node_modules
       - run: npm run build
 
